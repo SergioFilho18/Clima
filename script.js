@@ -14,6 +14,12 @@ document.querySelector('.busca').addEventListener('submit', async (event)=>{
 
     console.log(json);
 
+    if(json.cod === 200) {
+
+    } else {
+        showWarning('Não foi encontrada está localidade');
+    }
+
 });
 
 function showWarning(msg) {
